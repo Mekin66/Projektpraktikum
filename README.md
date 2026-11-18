@@ -75,12 +75,10 @@ Planung und Dokumentation laufen vollständig über GitHub:
 
 ## Team
 
-| Name | GitHub | Rolle |
+| GitHub | Rollen | Schwerpunkt |
 |---|---|---|
-| | | A – Firmware-Kern (Event-Framework, Zustandsautomat) |
-| | | B – Bedienung (Taster, LEDs, Fehlerbehandlung) |
-| | | C – Messtechnik (RC-Glied, Messung, Berechnung) |
-| | | D – Display & Dokumentation |
+| [@Mekin66](https://github.com/Mekin66) | A + B | Firmware-Kern (Event-Framework, Zustandsautomat), Bedienung (Taster, LEDs, Fehlerbehandlung) |
+| [@cynicalhuman](https://github.com/cynicalhuman) | C + D | Messtechnik (RC-Glied, Messung, Berechnung), Display & Dokumentation |
 
 Betreuer: Product Owner · Tutoren: Scrum Master
 
