@@ -66,3 +66,23 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# STM32CubeIDE / Eclipse build output
+Debug/
+Release/
+*.elf
+*.map
+*.list
+*.bin
+*.hex
+.metadata/
+RemoteSystemsTempFiles/
+*.launch.bak
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# GanttProject backups
+*.gan~

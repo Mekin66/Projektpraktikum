@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="RC-Bauteiltester – Projektphase" company="Projektpraktikum Computer Engineering" webLink="https://github.com/Mekin66/Projektpraktikum" view-date="2026-11-16" view-index="0" gantt-divider-location="420" resource-divider-location="300" version="3.2.3240" locale="de_DE">
+ <description><![CDATA[Zeitplan der Projektphase (Versuch 5, Aufgabe 2.2). Arbeitspakete AP1–AP17 entsprechen den GitHub-Issues.]]></description>
+ <view zooming-state="default:2" id="gantt-chart">
+  <field id="tpd3" name="Name" width="260" order="0"/>
+  <field id="tpd4" name="Anfangsdatum" width="80" order="1"/>
+  <field id="tpd5" name="Enddatum" width="80" order="2"/>
+  <option id="color.recent"/>
+ </view>
+ <view id="resource-table"><field id="0" name="Name" width="210" order="0"/><field id="1" name="Standardrolle" width="86" order="1"/></view>
+ <calendars><day-types><day-type id="0"/><day-type id="1"/><default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/><only-show-weekends value="false"/><overriden-day-types/><days/></day-types></calendars>
+ <tasks empty-milestones="true">
+  <taskproperties><taskproperty id="tpd0" name="type" type="default" valuetype="icon"/><taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/><taskproperty id="tpd2" name="info" type="default" valuetype="icon"/><taskproperty id="tpd3" name="name" type="default" valuetype="text"/><taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/><taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/><taskproperty id="tpd6" name="duration" type="default" valuetype="int"/><taskproperty id="tpd7" name="completion" type="default" valuetype="int"/><taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/><taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/></taskproperties>
+  <task id="1" name="Sprint 1" color="#0F6E56" meeting="false" start="2026-11-21" duration="24" complete="0" expand="true">
+   <task id="3" name="AP1 Projektsetup &amp; Repository" color="#8cb6ce" meeting="false" start="2026-11-21" duration="2" complete="0" expand="true">
+    <notes><![CDATA[STM32CubeIDE-Projekt `nucleo-f429zi-systemidentification-framework` (C++) anlegen, `main.c` → `main.cpp` umbenennen (Kursanleitung Anhang B), Projekt ins Repo einchecken, `.gitignore` prüfen.]]></notes>
+    <depend id="4" type="2" difference="0" hardness="Strong"/>
+    <depend id="5" type="2" difference="0" hardness="Strong"/>
+    <depend id="6" type="2" difference="0" hardness="Strong"/>
+    <depend id="7" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="4" name="AP2 Event-Framework (Event-Queue)" color="#8cb6ce" meeting="false" start="2026-11-23" duration="6" complete="0" expand="true">
+    <notes><![CDATA[Basisklasse `Event` mit `handleEvent()`, `std::queue<Event*>`, Abarbeitung in der Hauptschleife (Anhang C). Test-Events `TestEventGreen`, `TestEventRed`, `TestEventGreenBlink`.]]></notes>
+    <depend id="8" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="5" name="AP3 Taster &amp; Interrupt (EXTI)" color="#8cb6ce" meeting="false" start="2026-11-23" duration="9" complete="0" expand="true">
+    <notes><![CDATA[Blauer Taster B1 (PC13) per EXTI-Interrupt; erzeugt `StartEvent` im Ruhezustand bzw. `CancelEvent` im Betrieb.]]></notes>
+    <depend id="9" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="6" name="AP4 LED-Statusanzeige" color="#8cb6ce" meeting="false" start="2026-11-23" duration="9" complete="0" expand="true">
+    <notes><![CDATA[LD1 grün (PB0) dauerhaft = bereit, grün blinkend (Timer) = Betrieb, LD3 rot (PB14) = Cleanup, LD2 blau (PB7) = Ergebnis.]]></notes>
+    <depend id="9" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="7" name="AP5 Display-Modul (LCD über I²C)" color="#8cb6ce" meeting="false" start="2026-11-23" duration="13" complete="0" expand="true">
+    <notes><![CDATA[LCD-Ansteuerung aus Übung 3/4 als Modul übernehmen; `DisplayEvent` zum Senden von Texten. In Sprint 1 optional (Product Backlog 1), ab Sprint 2 Pflicht.]]></notes>
+    <depend id="9" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="8" name="AP6 Zustandsautomat (Idle/Betrieb/Cleanup/Ergebnis)" color="#8cb6ce" meeting="false" start="2026-11-29" duration="8" complete="0" expand="true">
+    <notes><![CDATA[Ablauf nach Product Backlog 1: Idle → Betrieb (Warteprozess fester Dauer) → Ergebnis → Idle; Abbruch: Betrieb → Cleanup (keine Eingaben) → Idle.]]></notes>
+    <depend id="9" type="2" difference="0" hardness="Strong"/>
+    <depend id="10" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="9" name="AP7 Integration &amp; Test Inkrement 1" color="#8cb6ce" meeting="false" start="2026-12-07" duration="5" complete="0" expand="true">
+    <notes><![CDATA[Module zusammenführen, kompletten Ablauf mehrfach testen, Fehler beheben.]]></notes>
+    <depend id="20" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="10" name="AP8 Zwischenpräsentation vorbereiten" color="#8cb6ce" meeting="false" start="2026-12-09" duration="5" complete="0" expand="true">
+    <notes><![CDATA[Produktdemo von Inkrement 1, Programmablauf-Diagramm, ggf. Folien. Jeder muss Implementierungsfragen beantworten können.]]></notes>
+    <depend id="21" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="20" name="M1 Inkrement 1 fertig" color="#000000" meeting="true" start="2026-12-13" duration="0" complete="0" expand="true">
+    <notes><![CDATA[Inkrement 1 erfüllt Product Backlog 1 (Ablauf mit Onboard-Peripherie, Abbruch, Cleanup, Ergebnis)]]></notes>
+    <depend id="21" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="21" name="M2 Zwischenpräsentation (KW 51)" color="#000000" meeting="true" start="2026-12-14" duration="0" complete="0" expand="true">
+    <notes><![CDATA[Vorführung von Inkrement 1 vor dem Product Owner (genaues Datum in KW 51 eintragen)]]></notes>
+    <depend id="11" type="2" difference="0" hardness="Strong"/>
+   </task>
+  </task>
+  <task id="2" name="Sprint 2" color="#534AB7" meeting="false" start="2026-12-19" duration="38" complete="0" expand="true">
+   <task id="11" name="AP9 Sprint-2-Planung &amp; Projektplan aktualisieren" color="#8cb6ce" meeting="false" start="2026-12-19" duration="2" complete="0" expand="true">
+    <notes><![CDATA[Feedback der Zwischenpräsentation einarbeiten, Gantt-Plan und Issues anpassen, offene Punkte aus Backlog 1 übernehmen.]]></notes>
+    <depend id="12" type="2" difference="0" hardness="Strong"/>
+    <depend id="13" type="2" difference="0" hardness="Strong"/>
+    <depend id="14" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="12" name="AP10 Entprellung des Tasters" color="#8cb6ce" meeting="false" start="2026-12-21" duration="8" complete="0" expand="true">
+    <notes><![CDATA[Doppelte Tastendrücke per Software-Entprellung (Timer/Zeitfenster) unterdrücken.]]></notes>
+    <depend id="18" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="13" name="AP11 RC-Glied aufbauen &amp; beschalten" color="#8cb6ce" meeting="false" start="2026-12-21" duration="9" complete="0" expand="true">
+    <notes><![CDATA[RC-Glied auf dem Breadboard aus vorhandenen R/C aufbauen; Eingang an DAC- bzw. PWM/GPIO-Ausgang, Ausgang U_a an ADC-Eingang. Theoretische Zeitkonstante T = R·C berechnen.]]></notes>
+    <depend id="15" type="2" difference="0" hardness="Strong"/>
+    <depend id="16" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="14" name="AP12 Nutzerführung über Display (Pflicht)" color="#8cb6ce" meeting="false" start="2026-12-21" duration="21" complete="0" expand="true">
+    <notes><![CDATA[Anweisungen, Status, Ergebnis und Fehlermeldungen auf dem LCD; Ergebnis lange genug anzeigen.]]></notes>
+    <depend id="17" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="15" name="AP13 Messung (Sprung ausgeben, ADC-Messreihe)" color="#8cb6ce" meeting="false" start="2026-12-30" duration="12" complete="0" expand="true">
+    <notes><![CDATA[Sprung erzeugen (`PWMEvent`/DAC), Abtastung per Timer und ADC (`StartMeasureEvent`), Messreihe mit mehreren Durchläufen speichern.]]></notes>
+    <depend id="17" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="16" name="AP14 Berechnung der Zeitkonstante" color="#8cb6ce" meeting="false" start="2026-12-30" duration="14" complete="0" expand="true">
+    <notes><![CDATA[Verfahren aus der technischen Dokumentation wählen (Steigung bei t0 oder 3T-/95-%-Kriterium), Ausreißer entfernen, Mittelwert bilden, mit Theoriewert vergleichen (`CalculationEvent`, `FinalCalculationEvent`).]]></notes>
+    <depend id="18" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="17" name="AP15 Fehlerbehandlung &amp; Fehleingaben" color="#8cb6ce" meeting="false" start="2027-01-11" duration="6" complete="0" expand="true">
+    <notes><![CDATA[Kein Bauteil / Kurzschluss / Messung außerhalb des Bereichs / Timeout erkennen und auf dem Display melden.]]></notes>
+    <depend id="18" type="2" difference="0" hardness="Strong"/>
+    <depend id="19" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="18" name="AP16 Integration &amp; Systemtest Inkrement 2" color="#8cb6ce" meeting="false" start="2027-01-17" duration="5" complete="0" expand="true">
+    <notes><![CDATA[Gesamtsystem testen, Messgenauigkeit mit mehreren Bauteilkombinationen prüfen, Code aufräumen.]]></notes>
+    <depend id="22" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="19" name="AP17 Abschlusspräsentation &amp; Kurzanleitung" color="#8cb6ce" meeting="false" start="2027-01-18" duration="7" complete="0" expand="true">
+    <notes><![CDATA[Messestand-artige Funktionsdemo, schriftliche Kurzbedienungsanleitung, besonders gelungene Lösungen hervorheben.]]></notes>
+    <depend id="23" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="22" name="M3 Inkrement 2 fertig" color="#000000" meeting="true" start="2027-01-24" duration="0" complete="0" expand="true">
+    <notes><![CDATA[Endprodukt erfüllt alle Mindestanforderungen (Zeitkonstante genau messen, Display-Führung, Fehlerbehandlung)]]></notes>
+    <depend id="23" type="2" difference="0" hardness="Strong"/>
+   </task>
+   <task id="23" name="M4 Abschlusspräsentation (KW 5)" color="#000000" meeting="true" start="2027-01-25" duration="0" complete="0" expand="true">
+    <notes><![CDATA[Funktionsdemo und schriftliche Kurzanleitung (genaues Datum in KW 5 eintragen)]]></notes>
+   </task>
+  </task>
+ </tasks>
+ <resources>
+  <resource id="0" name="Rolle A – Firmware-Kern (Framework, Zustandsautomat)" function="Default:0" contacts="" phone=""/>
+  <resource id="1" name="Rolle B – Bedienung (Taster, LEDs, Fehlerbehandlung)" function="Default:0" contacts="" phone=""/>
+  <resource id="2" name="Rolle C – Messtechnik (RC-Glied, Messung, Berechnung)" function="Default:0" contacts="" phone=""/>
+  <resource id="3" name="Rolle D – Display &amp; Dokumentation" function="Default:0" contacts="" phone=""/>
+ </resources>
+ <allocations>
+  <allocation task-id="3" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="4" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="5" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="6" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="7" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="8" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="9" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="9" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="9" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="9" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="10" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="11" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="11" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="11" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="11" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="12" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="13" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="14" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="15" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="16" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="17" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="18" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="18" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="18" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="18" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+  <allocation task-id="19" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+ </allocations>
+ <vacations/>
+ <previous/>
+ <roles roleset-name="Default"/>
+</project>
