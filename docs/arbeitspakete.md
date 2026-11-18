@@ -17,32 +17,32 @@ Jedes Teammitglied übernimmt eine Rolle und ist für die zugehörigen Pakete ve
 
 Zeitraum: 21.11.–13.12.2026
 
-| AP | Arbeitspaket | Rolle | Zeitraum | abhängig von |
-|---|---|---|---|---|
-| AP1 | Projektsetup & Repository | A | 21.11.2026 – 22.11.2026 | – |
-| AP2 | Event-Framework (Event-Queue) | A | 23.11.2026 – 28.11.2026 | AP1 |
-| AP3 | Taster & Interrupt (EXTI) | B | 23.11.2026 – 01.12.2026 | AP1 |
-| AP4 | LED-Statusanzeige | B | 23.11.2026 – 01.12.2026 | AP1 |
-| AP5 | Display-Modul (LCD über I²C) | D | 23.11.2026 – 05.12.2026 | AP1 |
-| AP6 | Zustandsautomat (Idle/Betrieb/Cleanup/Ergebnis) | A | 29.11.2026 – 06.12.2026 | AP2 |
-| AP7 | Integration & Test Inkrement 1 | alle | 07.12.2026 – 11.12.2026 | AP3, AP4, AP5, AP6 |
-| AP8 | Zwischenpräsentation vorbereiten | D | 09.12.2026 – 13.12.2026 | AP6 |
+| AP | Arbeitspaket | Issue | Rolle | Zeitraum | abhängig von |
+|---|---|---|---|---|---|
+| AP1 | Projektsetup & Repository | #2 | A | 21.11.2026 – 22.11.2026 | – |
+| AP2 | Event-Framework (Event-Queue) | #3 | A | 23.11.2026 – 28.11.2026 | AP1 |
+| AP3 | Taster & Interrupt (EXTI) | #4 | B | 23.11.2026 – 01.12.2026 | AP1 |
+| AP4 | LED-Statusanzeige | #5 | B | 23.11.2026 – 01.12.2026 | AP1 |
+| AP5 | Display-Modul (LCD über I²C) | #6 | D | 23.11.2026 – 05.12.2026 | AP1 |
+| AP6 | Zustandsautomat (Idle/Betrieb/Cleanup/Ergebnis) | #7 | A | 29.11.2026 – 06.12.2026 | AP2 |
+| AP7 | Integration & Test Inkrement 1 | #8 | alle | 07.12.2026 – 11.12.2026 | AP3, AP4, AP5, AP6 |
+| AP8 | Zwischenpräsentation vorbereiten | #9 | D | 09.12.2026 – 13.12.2026 | AP6 |
 
 ## Sprint 2 – Inkrement 2 (Endprodukt)
 
 Zeitraum: 19.12.2026–24.01.2027
 
-| AP | Arbeitspaket | Rolle | Zeitraum | abhängig von |
-|---|---|---|---|---|
-| AP9 | Sprint-2-Planung & Projektplan aktualisieren | alle | 19.12.2026 – 20.12.2026 | M2 |
-| AP10 | Entprellung des Tasters | B | 21.12.2026 – 28.12.2026 | AP9 |
-| AP11 | RC-Glied aufbauen & beschalten | C | 21.12.2026 – 29.12.2026 | AP9 |
-| AP12 | Nutzerführung über Display (Pflicht) | D | 21.12.2026 – 10.01.2027 | AP9 |
-| AP13 | Messung (Sprung ausgeben, ADC-Messreihe) | C | 30.12.2026 – 10.01.2027 | AP11 |
-| AP14 | Berechnung der Zeitkonstante | C | 30.12.2026 – 12.01.2027 | AP11 |
-| AP15 | Fehlerbehandlung & Fehleingaben | B | 11.01.2027 – 16.01.2027 | AP12, AP13 |
-| AP16 | Integration & Systemtest Inkrement 2 | alle | 17.01.2027 – 21.01.2027 | AP10, AP14, AP15 |
-| AP17 | Abschlusspräsentation & Kurzanleitung | D | 18.01.2027 – 24.01.2027 | AP15 |
+| AP | Arbeitspaket | Issue | Rolle | Zeitraum | abhängig von |
+|---|---|---|---|---|---|
+| AP9 | Sprint-2-Planung & Projektplan aktualisieren | #10 | alle | 19.12.2026 – 20.12.2026 | M2 |
+| AP10 | Entprellung des Tasters | #11 | B | 21.12.2026 – 28.12.2026 | AP9 |
+| AP11 | RC-Glied aufbauen & beschalten | #12 | C | 21.12.2026 – 29.12.2026 | AP9 |
+| AP12 | Nutzerführung über Display (Pflicht) | #13 | D | 21.12.2026 – 10.01.2027 | AP9 |
+| AP13 | Messung (Sprung ausgeben, ADC-Messreihe) | #14 | C | 30.12.2026 – 10.01.2027 | AP11 |
+| AP14 | Berechnung der Zeitkonstante | #15 | C | 30.12.2026 – 12.01.2027 | AP11 |
+| AP15 | Fehlerbehandlung & Fehleingaben | #16 | B | 11.01.2027 – 16.01.2027 | AP12, AP13 |
+| AP16 | Integration & Systemtest Inkrement 2 | #17 | alle | 17.01.2027 – 21.01.2027 | AP10, AP14, AP15 |
+| AP17 | Abschlusspräsentation & Kurzanleitung | #18 | D | 18.01.2027 – 24.01.2027 | AP15 |
 
 ## Was ist sequenziell, was parallel?
 
