@@ -4,21 +4,18 @@ Wir entwickeln auf dem **Nucleo-F429ZI** einen Bauteiltester, der die **Zeitkons
 
 ## Versuch 5 – Kick-off Projektphase
 
-| Aufgabe | Ergebnis |
+| Aufgabe | Wo? |
 |---|---|
-| 1.1 Systemarchitektur | [Schaubild (PNG)](docs/architektur/Systemarchitektur.png) · [draw.io-Datei](docs/architektur/Systemarchitektur.drawio) |
-| 1.2 Arbeitspakete & Abhängigkeiten | [docs/arbeitspakete.md](docs/arbeitspakete.md) · Issues AP1–AP17 |
-| 2.1 / 2.2 Gantt-Chart mit Meilensteinen | [docs/zeitplan.md](docs/zeitplan.md) · [GanttProject-Datei](planung/Projektplan.gan) |
-| 2.3 Tools & Methode | [docs/workflow.md](docs/workflow.md) |
-| 2.4 Workflow einrichten | [Checkliste](docs/workflow.md#einrichtung--checkliste-für-jedes-teammitglied-24) · Issues · Meilensteine · Board |
+| 1.1 Systemarchitektur | [`Systemarchitektur.drawio`](Systemarchitektur.drawio) (Bild unten) |
+| 1.2 Arbeitspakete & Abhängigkeiten | [Issue #21 – Projektübersicht](../../issues/21) · Arbeitspakete als [Issues #2–#18](../../issues) |
+| 2.1 / 2.2 Zeitplan mit Meilensteinen | [Meilensteine](../../milestones) · Roadmap im GitHub-Project · Gantt in [#21](../../issues/21) |
+| 2.3 Tools & Git-Workflow | [Issue #22](../../issues/22) |
+| 2.4 Einrichtung im Team | [Issue #19 – Onboarding](../../issues/19) |
 
-![Systemarchitektur](docs/architektur/Systemarchitektur.png)
+![Systemarchitektur](Systemarchitektur.png)
 
-## Termine
+## Team
 
-| Meilenstein | Datum |
-|---|---|
-| Inkrement 1 fertig | 13.12.2026 |
-| Zwischenpräsentation | KW 51 (14.–18.12.2026) |
-| Inkrement 2 fertig | 24.01.2027 |
-| Abschlusspräsentation | KW 5 (25.–29.01.2027) |
+| Name | GitHub | Rolle |
+|---|---|---|
+| | | |
