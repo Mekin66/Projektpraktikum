@@ -13,6 +13,15 @@
 
 Git ist eines der vorgegebenen Tools; GitHub übernimmt die Rolle von GitLab (gleiche Funktionen: Repository, Issues, Merge/Pull Requests, Board).
 
+## Board einrichten (einmalig, ca. 2 Minuten)
+
+Die Issues und Meilensteine sind bereits angelegt. Das Kanban-Board legt der Repo-Besitzer einmal an:
+
+1. Repository → Tab **Projects** → **Link a project** → **New project** → Vorlage **Board**, Name „RC-Bauteiltester – Projektphase“.
+2. Spalten: *Todo*, *In Arbeit*, *Review*, *Erledigt*.
+3. Im Board unten **+ Add item** → `#` eingeben → alle Issues AP1–AP17 und das Onboarding-Issue hinzufügen (oder Workflow *Auto-add to project* mit Filter `is:issue` aktivieren).
+4. Optional: Ansicht nach Meilenstein gruppieren (*Group by → Milestone*), dann sieht man Sprint 1 und Sprint 2 getrennt.
+
 ## Arbeitsweise mit Git
 
 1. `main` enthält immer einen **lauffähigen** Stand. Niemand committet direkt auf `main`.
