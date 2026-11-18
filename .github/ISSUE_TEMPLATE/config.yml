@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Projektübersicht und Zeitplan
+    url: https://github.com/Mekin66/Projektpraktikum/issues/21
+    about: Arbeitspakete, Abhängigkeiten, Gantt
+  - name: Tools und Git-Workflow
+    url: https://github.com/Mekin66/Projektpraktikum/issues/22
+    about: Regeln für Branches, Commits und Pull Requests

@@ -1,0 +1,38 @@
+name: Fehlerbericht
+description: Fehler in Firmware oder Hardware melden
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: beschreibung
+    attributes:
+      label: Was passiert?
+      description: Kurze Beschreibung des Fehlers.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduktion
+    attributes:
+      label: Schritte zum Nachstellen
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+  - type: textarea
+    id: erwartet
+    attributes:
+      label: Erwartetes Verhalten
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Commit / Branch
+      placeholder: z. B. main @ a1b2c3d
+  - type: textarea
+    id: zusatz
+    attributes:
+      label: Weitere Infos
+      description: Konsolenausgabe, Fotos vom Aufbau, verwendete R/C-Werte …
