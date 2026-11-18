@@ -1,0 +1,56 @@
+name: Arbeitspaket
+description: Neues Arbeitspaket (AP) für die Projektplanung anlegen
+title: "APxx: "
+body:
+  - type: textarea
+    id: beschreibung
+    attributes:
+      label: Beschreibung
+      description: Was soll umgesetzt werden und warum?
+    validations:
+      required: true
+  - type: textarea
+    id: aufgaben
+    attributes:
+      label: Aufgaben
+      description: Einzelne Arbeitsschritte als Checkliste.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: akzeptanzkriterien
+    attributes:
+      label: Akzeptanzkriterien
+      description: Wann gilt das Arbeitspaket als erledigt?
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: input
+    id: abhaengigkeiten
+    attributes:
+      label: Abhängig von
+      description: Issues, die vorher erledigt sein müssen (z. B. #3, #7).
+      placeholder: "–"
+  - type: dropdown
+    id: rolle
+    attributes:
+      label: Rolle
+      options:
+        - A – Firmware-Kern
+        - B – Bedienung
+        - C – Messtechnik
+        - D – Display & Dokumentation
+        - alle
+    validations:
+      required: true
+  - type: dropdown
+    id: sprint
+    attributes:
+      label: Sprint
+      options:
+        - Sprint 1
+        - Sprint 2
+    validations:
+      required: true
